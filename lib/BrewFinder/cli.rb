@@ -20,6 +20,7 @@ class BrewFinder::CLI
     self.show_details
   end
 
+
   def self.more_info
     puts "If you would like to see the list of breweries again type 'list'"
     puts "To search a new state type 'back' or type 'exit' to exit"

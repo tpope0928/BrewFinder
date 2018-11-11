@@ -8,16 +8,16 @@ class BrewFinder::Scraper
 
   def self.create_brewery(name = nil, address = nil, phone = nil, url = nil, brewery_type = nil)
     BrewFinder::Brewery.new(
-    @name = @deets.css("li.name").text,
-    @address = @deets.css("li.address").text.strip,
-    @city_state = @deets.css("li").text
-    @phone = @deets.css("li.telephone").text,
-    @url = @deets.css("a").text.gsub(/\s+/, " ").strip,
-    @brewery_type = @deets.css("li.brewery_type").text.gsub(/\s+/, " ").strip
+      @name = @deets.css("li.name").text,
+      @address = @deets.css("li.address").text.strip,
+      @city_state = @deets.css("li").text,
+      @phone = @deets.css("li.telephone").text,
+      @url = @deets.css("a").text.gsub(/\s+/, " ").strip,
+      @brewery_type = @deets.css("li.brewery_type").text.gsub(/\s+/, " ").strip
     )
 
     class << self
-        attr_accessor :name, :address, :city_state :phone, :url :brewery_type
+        attr_accessor :name, :address, :city_state, :phone, :url, :brewery_type
     end
 
   end
