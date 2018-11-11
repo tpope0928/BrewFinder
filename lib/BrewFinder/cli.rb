@@ -14,7 +14,7 @@ class BrewFinder::CLI
 
   def self.create_list
     puts "Here is a list of places to drink near you!"
-    BrewFinder::Scraper::breweries.each_with_index.map {|n, index| puts "#{index+1}. #{n}"
+    BrewFinder::Scraper::breweries.each_with_index.map {|n, index| puts "#{index+1}. #{n}"}
     self.show_details
   end
 
@@ -68,3 +68,4 @@ class BrewFinder::CLI
       puts "I didnt quite get that. Please try again."
       BrewFinder::CLI.new.start
     end
+end
