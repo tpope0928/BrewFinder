@@ -58,7 +58,7 @@ class BrewFinder::CLI
       puts BrewFinder::Scraper::url
       puts ""
       puts "Type:"
-      puts BrewFinder::Scraper::brewey_type
+      puts BrewFinder::Scraper::brewery_type
       puts ""
       self.more_info
     end
