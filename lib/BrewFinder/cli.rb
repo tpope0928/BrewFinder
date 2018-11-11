@@ -52,6 +52,7 @@ class BrewFinder::CLI
       puts BrewFinder::Scraper::name
       puts ""
       puts BrewFinder::Scraper::address
+      puts BrewFinder::Scraper::city_state
       puts ""
       puts "Contact Info:"
       puts BrewFinder::Scraper::phone

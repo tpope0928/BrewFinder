@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative "../lib/BrewFinder.rb"
+require_relative '../lib/BrewFinder.rb'
 
 BrewFinder::CLI.new.call
