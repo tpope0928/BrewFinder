@@ -1,0 +1,3 @@
+class BrewFinder::Brewery
+
+end
