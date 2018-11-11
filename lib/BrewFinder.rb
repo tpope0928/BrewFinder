@@ -1,6 +1,8 @@
-require "BrewFinder/version"
+require 'pry'
+require 'nokogiri'
+require 'open-uri'
 
-module BrewFinder
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative './BrewFinder/version'
+require_relative './BrewFinder/scraper.rb'
+require_relative './BrewFinder/restaurant.rb'
+require_relative './BrewFinder/cli.rb'
