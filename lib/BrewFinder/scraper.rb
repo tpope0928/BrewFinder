@@ -39,7 +39,7 @@ class BrewFinder::Scraper
   def self.find_details_page
       info = gets.strip.to_i
 
-        if info > @restaurants.size || info == 0
+        if info > @brewery.size || info == 0
           puts "Invalid choice. Select a number from the list above:"
           self.find_details_page
         else
